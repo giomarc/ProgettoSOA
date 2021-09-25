@@ -14,7 +14,7 @@ Per utilizzare il modulo è necessario aprire un terminale nella cartella princi
 make clean; make; make load
 ```
 
-##Test
+## Test
 
 ### Esecuzione dei test
 1. Per individuare il numero delle system call ed il valore del major number associato al device driver digitare:
