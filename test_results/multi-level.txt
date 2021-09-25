@@ -1,0 +1,131 @@
+CREATE: successful creation of key 12 , tag descriptor 0, permission TAG_ACCESS_ALL
+RECEIVE: Thread 1104017152, tag 0, level 0, read correctly message: May the force be with you
+RECEIVE: Thread 1095624448, tag 0, level 1, read correctly message: How are u?
+RECEIVE: Thread 1078839040, tag 0, level 3, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 1070446336, tag 0, level 4, read correctly message: Hello!
+RECEIVE: Thread 978126592, tag 0, level 15, read correctly message: May the force be with you
+RECEIVE: Thread 1087231744, tag 0, level 2, read correctly message: Hello!
+RECEIVE: Thread 818665216, tag 0, level 2, read correctly message: Hello!
+RECEIVE: Thread 1062053632, tag 0, level 5, read correctly message: How are u?
+RECEIVE: Thread 793487104, tag 0, level 5, read correctly message: How are u?
+RECEIVE: Thread 1053660928, tag 0, level 6, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 785094400, tag 0, level 6, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 1045268224, tag 0, level 7, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 776701696, tag 0, level 7, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 1036875520, tag 0, level 8, read correctly message: How are u?
+RECEIVE: Thread 768308992, tag 0, level 8, read correctly message: How are u?
+RECEIVE: Thread 1028482816, tag 0, level 9, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 759916288, tag 0, level 9, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 1020090112, tag 0, level 10, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 751523584, tag 0, level 10, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 1011697408, tag 0, level 11, read correctly message: Hello!
+RECEIVE: Thread 743130880, tag 0, level 11, read correctly message: Hello!
+RECEIVE: Thread 1003304704, tag 0, level 12, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 734738176, tag 0, level 12, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 994912000, tag 0, level 13, read correctly message: May the force be with you
+RECEIVE: Thread 726345472, tag 0, level 13, read correctly message: May the force be with you
+RECEIVE: Thread 986519296, tag 0, level 14, read correctly message: How are u?
+RECEIVE: Thread 717952768, tag 0, level 14, read correctly message: How are u?
+RECEIVE: Thread 969733888, tag 0, level 16, read correctly message: Hello!
+RECEIVE: Thread 701167360, tag 0, level 16, read correctly message: Hello!
+SEND: tag service 0 level 7, there are no waiting sleepers
+SEND: tag service 0 level 12, there are no waiting sleepers
+SEND: tag service 0 level 13, there are no waiting sleepers
+RECEIVE: Thread 709560064, tag 0, level 15, read correctly message: May the force be with you
+RECEIVE: Thread 944555776, tag 0, level 19, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 675989248, tag 0, level 19, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 936163072, tag 0, level 20, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 667596544, tag 0, level 20, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 961341184, tag 0, level 17, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 692774656, tag 0, level 17, read correctly message: I'm Bond, James Bond
+SEND: tag service 0 level 14, there are no waiting sleepers
+RECEIVE: Thread 952948480, tag 0, level 18, read correctly message: Hello!
+RECEIVE: Thread 684381952, tag 0, level 18, read correctly message: Hello!
+SEND: tag service 0 level 19, there are no waiting sleepers
+RECEIVE: Thread 927770368, tag 0, level 21, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 659203840, tag 0, level 21, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 919377664, tag 0, level 22, read correctly message: Hello!
+RECEIVE: Thread 650811136, tag 0, level 22, read correctly message: Hello!
+RECEIVE: Thread 910984960, tag 0, level 23, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 642418432, tag 0, level 23, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 902592256, tag 0, level 24, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 634025728, tag 0, level 24, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 894199552, tag 0, level 25, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 625633024, tag 0, level 25, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 885806848, tag 0, level 26, read correctly message: May the force be with you
+RECEIVE: Thread 617240320, tag 0, level 26, read correctly message: May the force be with you
+RECEIVE: Thread 877414144, tag 0, level 27, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 608847616, tag 0, level 27, read correctly message: I'm Harris, good job bro!
+RECEIVE: Thread 869021440, tag 0, level 28, read correctly message: May the force be with you
+RECEIVE: Thread 600454912, tag 0, level 28, read correctly message: May the force be with you
+SEND: tag service 0 level 2, there are no waiting sleepers
+RECEIVE: Thread 843843328, tag 0, level 31, read correctly message: How are u?
+RECEIVE: Thread 575276800, tag 0, level 31, read correctly message: How are u?
+SEND: tag service 0 level 5, there are no waiting sleepers
+RECEIVE: Thread 852236032, tag 0, level 30, read correctly message: How are u?
+RECEIVE: Thread 583669504, tag 0, level 30, read correctly message: How are u?
+SEND: tag service 0 level 8, there are no waiting sleepers
+SEND: tag service 0 level 9, there are no waiting sleepers
+SEND: tag service 0 level 10, there are no waiting sleepers
+RECEIVE: Thread 827057920, tag 0, level 1, read correctly message: I'm Harris, good job bro!
+SEND: tag service 0 level 11, there are no waiting sleepers
+SEND: tag service 0 level 16, there are no waiting sleepers
+SEND: tag service 0 level 17, there are no waiting sleepers
+SEND: tag service 0 level 18, there are no waiting sleepers
+SEND: tag service 0 level 22, there are no waiting sleepers
+SEND: tag service 0 level 24, there are no waiting sleepers
+SEND: tag service 0 level 26, there are no waiting sleepers
+SEND: tag service 0 level 28, there are no waiting sleepers
+SEND: tag service 0 level 30, there are no waiting sleepers
+SEND: tag service 0 level 31, there are no waiting sleepers
+SEND: tag service 0 level 6, there are no waiting sleepers
+RECEIVE: Thread 592062208, tag 0, level 29, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 860628736, tag 0, level 29, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 810272512, tag 0, level 3, read correctly message: How are u?
+RECEIVE: Thread 835450624, tag 0, level 0, read correctly message: I'm Bond, James Bond
+RECEIVE: Thread 801879808, tag 0, level 4, read correctly message: I'm Harris, good job bro!
+SEND: tag service 0 level 23, there are no waiting sleepers
+SEND: tag service 0 level 27, there are no waiting sleepers
+SEND: tag service 0 level 20, there are no waiting sleepers
+SEND: tag service 0 level 25, there are no waiting sleepers
+SEND: tag service 0 level 29, there are no waiting sleepers
+SEND: tag service 0 level 21, there are no waiting sleepers
+SEND: message May the force be with you, correctly delivered by 566884096 to tag 0 level 0
+SEND: message How are u?, correctly delivered by 558491392 to tag 0 level 1
+SEND: message I'm Bond, James Bond, correctly delivered by 541705984 to tag 0 level 3
+SEND: message Hello!, correctly delivered by 533313280 to tag 0 level 4
+SEND: message May the force be with you, correctly delivered by 440993536 to tag 0 level 15
+SEND: message May the force be with you, correctly delivered by 172427008 to tag 0 level 15
+SEND: message I'm Bond, James Bond, correctly delivered by 298317568 to tag 0 level 0
+SEND: message I'm Harris, good job bro!, correctly delivered by 289924864 to tag 0 level 1
+SEND: message How are u?, correctly delivered by 273139456 to tag 0 level 3
+SEND: message I'm Harris, good job bro!, correctly delivered by 264746752 to tag 0 level 4
+SEND: message I'm Bond, James Bond, correctly delivered by 323495680 to tag 0 level 29
+SEND: message How are u?, correctly delivered by 306710272 to tag 0 level 31
+SEND: message How are u?, correctly delivered by 315102976 to tag 0 level 30
+SEND: message Hello!, correctly delivered by 474564352 to tag 0 level 11
+SEND: message I'm Harris, good job bro!, correctly delivered by 466171648 to tag 0 level 12
+SEND: message May the force be with you, correctly delivered by 457778944 to tag 0 level 13
+SEND: message How are u?, correctly delivered by 449386240 to tag 0 level 14
+SEND: message Hello!, correctly delivered by 432600832 to tag 0 level 16
+SEND: message I'm Bond, James Bond, correctly delivered by 138856192 to tag 0 level 19
+SEND: message I'm Bond, James Bond, correctly delivered by 491349760 to tag 0 level 9
+SEND: message I'm Harris, good job bro!, correctly delivered by 130463488 to tag 0 level 20
+SEND: message I'm Bond, James Bond, correctly delivered by 424208128 to tag 0 level 17
+SEND: message How are u?, correctly delivered by 499742464 to tag 0 level 8
+SEND: message Hello!, correctly delivered by 415815424 to tag 0 level 18
+SEND: message I'm Harris, good job bro!, correctly delivered by 508135168 to tag 0 level 7
+SEND: message I'm Bond, James Bond, correctly delivered by 390637312 to tag 0 level 21
+SEND: message How are u?, correctly delivered by 524920576 to tag 0 level 5
+SEND: message I'm Bond, James Bond, correctly delivered by 482957056 to tag 0 level 10
+SEND: message Hello!, correctly delivered by 550098688 to tag 0 level 2
+SEND: message I'm Bond, James Bond, correctly delivered by 516527872 to tag 0 level 6
+SEND: message I'm Harris, good job bro!, correctly delivered by 373851904 to tag 0 level 23
+SEND: message May the force be with you, correctly delivered by 348673792 to tag 0 level 26
+SEND: message Hello!, correctly delivered by 382244608 to tag 0 level 22
+SEND: message I'm Bond, James Bond, correctly delivered by 365459200 to tag 0 level 24
+SEND: message May the force be with you, correctly delivered by 331888384 to tag 0 level 28
+SEND: message I'm Bond, James Bond, correctly delivered by 357066496 to tag 0 level 25
+SEND: message I'm Harris, good job bro!, correctly delivered by 340281088 to tag 0 level 27
+Tag service 0 : removed with success, returned 0 
+Exiting...

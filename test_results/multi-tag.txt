@@ -1,0 +1,11 @@
+CREATE: successful creation of key 10 , tag descriptor 1, permission TAG_ACCESS_ALL
+CREATE: successful creation of key 11 , tag descriptor 2, permission TAG_ACCESS_ALL
+SEND: tag service 2 level 5, there are no waiting sleepers
+RECEIVE: Thread 1126905600, tag 1, level 4, read correctly message: How are u?
+SEND: message How are u?, correctly delivered by 1118512896 to tag 1 level 4
+WAKE UP: tag service 1, no readers to wake up!
+RECEIVE: Thread 1101727488, tag 2, level 5, read correctly message: AWAKE_ALL woke me up!
+WAKE UP: tag_service 2, woke up all readers!
+Tag service 1 : removed with success, returned 0 
+Tag service 2 : removed with success, returned 0 
+Exiting...
