@@ -18,7 +18,7 @@ void signal_handler(int sig_num){
 
 int main(int argc, char** argv){
 	
-	int ret;
+	int ret, permission;
 	bool exit = true;
 	
 	if(argc < 4){
@@ -28,13 +28,12 @@ int main(int argc, char** argv){
         
 	char buff[MAX_MSG_SIZE];
 	int key = strtol(argv[1], NULL, 10);
-	int permission = strtol(argv[2], NULL, 10);
-    if(permission != TAG_ACCESS_ALL){
-        if(permission != TAG_ACCESS_PRIVATE) {
-            fprintf(stdout, "permission must be TAG_ACCESS_ALL or TAG_ACCESS_PRIVATE\n");
-            return EXIT_FAILURE;
-        }
-    }
+	if(strcmp(argv[2], "TAG_ACCESS_ALL") == 0) permission = TAG_ACCESS_ALL;
+	else if (strcmp(argv[2], "TAG_ACCESS_PRIVATE")== 0) permission = TAG_ACCESS_PRIVATE;
+	else{
+	    fprintf(stdout, "Permission must be or TAG_ACCESS_ALL or TAG_ACCESS_PRIVATE\n");
+        return EXIT_FAILURE;
+	}
 	int level = strtol(argv[3], NULL, 10);
     if(level < 0 || level > 31)
     {

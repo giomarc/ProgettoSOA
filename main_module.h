@@ -80,8 +80,6 @@ typedef struct _object_state{
 //HASH TABLE
 DEFINE_HASHTABLE(tbl,9);
 EXPORT_SYMBOL(tbl);
-LIST_HEAD(head_node);
-EXPORT_SYMBOL(head_node);
 
 struct available_tag_descriptor *tag_queue;
 

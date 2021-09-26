@@ -189,7 +189,7 @@ int create_tag(int key, int permission)
     char *perm = "TAG_ACCESS_ALL";
     char *priv = "";
 
-    if(permission == 1)
+    if(permission == TAG_ACCESS_PRIVATE)
         perm = "TAG_ACCESS_PRIVATE";
     if(key == IPC_PRIVATE_KEY)
         priv = "IPC_PRIVATE_KEY";
