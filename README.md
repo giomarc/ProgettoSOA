@@ -50,7 +50,7 @@ make clean; make; make load
 
 I test eseguibili sono:
 
-* *test_create_open_remove.c*: creazione, rimozione ed apertura anche di tag service già esistenti per verificare il corretto funzionamento delle funzionalità di creazione, apertura e rimozione di un tag service;
+* *test_create_open_remove.c*: verifica il corretto funzionamento delle funzionalità di creazione, apertura e rimozione dei tag service;
 * *test_wakeupall.c*: creazione di soli thread lettori per verificarne il corretto risveglio da parte della funzione di *wake_up*;
 * *test_driver.c*: test del corretto funzionamento del driver che si occupa di reperire lo snapshot del sistema (stato attuale dei tag service);
 * *reader.c / writer.c*: avviare prima il reader e solo successivamente il writer. Test del corretto funzionamento in lettura e scrittura delle funzionalità del modulo;
