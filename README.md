@@ -53,15 +53,11 @@ I test eseguibili sono:
 * *test_create_open_remove.c*: creazione, rimozione ed apertura anche di tag service già esistenti per verificare il corretto funzionamento delle funzionalità di creazione, apertura e rimozione di un tag service;
 * *test_wakeupall.c*: creazione di soli thread lettori per verificarne il corretto risveglio da parte della funzione di *wake_up*;
 * *test_driver.c*: test del corretto funzionamento del driver che si occupa di reperire lo snapshot del sistema (stato attuale dei tag service);
-* *reader.c / writer.c*: in tal caso, avviare prima il reader e solo successivamente il writer. Test del corretto funzionamento in lettura e scrittura delle funzionalità del modulo;
+* *reader.c / writer.c*: avviare prima il reader e solo successivamente il writer. Test del corretto funzionamento in lettura e scrittura delle funzionalità del modulo;
 * *reader_custom.c / writer_custom.c*: a differenza del test precedente, consente di inserire parametri in input customizzati per reader e writer. Inoltre, il writer può immettere messaggi run-time;
 * *multi_read_write_multi_level.c*: test per verificare la sincronizzazione quando letture e scritture avvengono tra più livelli dello stesso tag service;
 * *multi_read_write_multi_tag.c*: test per verificare la sincronizzazione quando letture e scritture avvengono tra tag services. Inoltre vengono nuovamente testate le funzioni di risveglio e rimozione dei tag service in presenza ed assenza di lettori pendenti;
 
 *Nota: nella cartella **test_results** sono presenti i risultati dei test effettuati in precedenza.*
 
-
-### Ulteriori informazioni
-
-Per informazioni più dettagliate sul funzionamento del sistema, viene allegata al progetto la relazione.
 
