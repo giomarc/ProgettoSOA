@@ -1,0 +1,11 @@
+cmake-build-debug
+.DS_Store
+.idea
+.tmp_versions
+*.mk
+*.cmd
+*.ko
+*.o
+*.order
+*.symvers
+*.mod.c

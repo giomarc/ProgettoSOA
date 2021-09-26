@@ -1,6 +1,5 @@
 #include "main_module.h"
 
-//struct available_tag_descriptor *tag_queue;
 extern void enqueue(struct available_tag_descriptor* queue, int tag_descriptor);
 extern int dequeue(struct available_tag_descriptor* queue);
 extern int first(struct available_tag_descriptor* queue);
@@ -127,7 +126,7 @@ ssize_t dev_read(struct file *filp, char *buff, size_t len, loff_t *off)
 
 
 struct file_operations fops = {
-        .owner = THIS_MODULE, //permette a tutta l'architettura di lavorare nel driver dopo averlo bloccato
+        .owner = THIS_MODULE,
         .read = dev_read,
         .open =  dev_open,
         .release = dev_release
@@ -404,14 +403,13 @@ asmlinkage int sys_tag_receive(int tag, int level, char* buffer, size_t size){
 	//Put thread (reader) in sleepers list
 	__atomic_fetch_add(&tag_level->sleepers, 1 , __ATOMIC_SEQ_CST);
 	list_add_tail_rcu(&td->list, &tag_level->reader_sleepers);
-	
-	//qui è dove metterò il messaggio letto
+
 	addr = kzalloc(MAX_MSG_SIZE, GFP_KERNEL); //dealloco dopo la copy to user
     if (addr == NULL){
     	printk("%s: RECEIVE error KMALLOC addr\n",MODNAME);
     	return ER_ALLOC;
     } 
-    //metto il thread in wait_queue che attende finchè la condizione non si è verificata    
+    //thread in wait_queue until condition is not verified
     wait_read = wait_event_interruptible(tag_level->wait_queue, tag_level->flag>0 && tag_level->flag == tag_level->sleepers);
 
     switch(wait_read){
@@ -599,7 +597,7 @@ int init_module(void)
 #else
 #endif
     printk("%s: ****** module correctly mounted ******\n",MODNAME);
-	init_driver(); //inizializzo anche il driver
+	init_driver();
 	return 0;
 }
 

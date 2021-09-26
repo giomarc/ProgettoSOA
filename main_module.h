@@ -69,7 +69,7 @@ extern void syscall_table_finder(void);
 extern struct tag_service *search_tag_by_tagdescriptor(int tag);
 extern struct tag_service *search_tag_by_key(int key,int hash_key,int command);
 
-// Struttura Driver
+// Driver struct
 typedef struct _object_state{
     struct mutex object_busy;
     struct mutex operation_synchronizer;
@@ -80,21 +80,17 @@ typedef struct _object_state{
 //HASH TABLE
 DEFINE_HASHTABLE(tbl,9);
 EXPORT_SYMBOL(tbl);
-
+//Tag descriptor queue
 struct available_tag_descriptor *tag_queue;
 
 int myhash(const int s) {
     int key = 0;
 
-    //if (s == IPC_PRIVATE_KEY)
-    //    key = 255;
-    //else
-    //      key = s % 255;
     key = s % 256;
     return key;
 }
 
-//inizializza il singolo livello
+//Initializes single level
 void init_single_level(struct level *level_ptr, int level_id){
 
     level_ptr->id = level_id;
@@ -107,7 +103,7 @@ void init_single_level(struct level *level_ptr, int level_id){
 }
 
 
-// inizializza tutti i livelli di un tag service
+//Initializes all levels
 void init_levels(struct tag_service *tag_service)
 {
     int i;
@@ -116,6 +112,8 @@ void init_levels(struct tag_service *tag_service)
     }
 }
 
+//Check if thread can access tag service basing on permission
+//if private permission and thread has different id than owner, then cannot access
 int check_access_perm(struct tag_service *tagService)
 {
     if(tagService->permission == TAG_ACCESS_PRIVATE && (int)current->tgid != tagService->owner){
@@ -124,7 +122,7 @@ int check_access_perm(struct tag_service *tagService)
     return 0;
 }
 
-//crea il tag service inizializzando con key, permission, e i 32 livelli
+//Creates tag service: initializes parameters and levels
 int create_tag_service(struct tag_service *tag, int key, int permission)
 {
     int key_tag;
@@ -145,7 +143,7 @@ int create_tag_service(struct tag_service *tag, int key, int permission)
     return tag->tag_descriptor;
 }
 
-
+//Check if there are pending readers in any level
 int check_readers(struct tag_service * tag_service)
 {
     int res = 0;
@@ -159,7 +157,7 @@ int check_readers(struct tag_service * tag_service)
     return res;
 }
 
-
+//Deallocate thread_data struct
 void remove_thread_data(struct level *tag_level)
 {
     struct thread_data *cursor, *temp;
@@ -174,7 +172,7 @@ void remove_thread_data(struct level *tag_level)
 }
 
 
-//cerco il tag_service attraverso il tag_descriptor
+//Find tag service by his tag descriptor
 struct tag_service *search_tag_by_tagdescriptor(int tag){
 
     struct tag_service *cur = NULL;
@@ -188,7 +186,7 @@ struct tag_service *search_tag_by_tagdescriptor(int tag){
 }
 
 
-
+//Find tag service by his key
 struct tag_service* search_tag_by_key(int key,int hash_key,int command){
 
     struct tag_service *tag_to_find = NULL;
@@ -202,14 +200,15 @@ struct tag_service* search_tag_by_key(int key,int hash_key,int command){
 
 
 
-//tag_ctl wake up dei thread sleepers
+//Implements wake up: if there are pending readers in a level, wake them up
+//else nothing to wake up
 int wake_up_all_level(struct tag_service *tag){
 
     int i, readers, prev_val;
     struct level *tag_level;
     struct thread_data *cursor, *temp;
     int woke_up = 0;
-    char *wake_up_message = "AWAKE_ALL woke me up!"; //messaggio di default
+    char *wake_up_message = "AWAKE_ALL woke me up!"; //default message
 
     for(i = 0; i < MAX_LEVELS; i++){
         tag_level = &(tag->levels[i]);
